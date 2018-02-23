@@ -66,7 +66,7 @@ class NewSocialViewController: UIViewController {
     }
     
     func setupTextFields() {
-        let frameText = CGRect(x: 25, y: 310, width: view.frame.width - 50, height: 50)
+        let frameText = CGRect(x: 25, y: 290, width: view.frame.width - 50, height: 50)
         postTextField = UITextField(frame: frameText)
         postTextField.placeholder = "  Social Name"
         postTextField.layer.borderColor = UIColor.lightGray.cgColor
@@ -75,7 +75,7 @@ class NewSocialViewController: UIViewController {
         postTextField.textColor = UIColor.black
         view.addSubview(postTextField)
 
-        let descriptionText = CGRect(x: 25, y: 390, width: view.frame.width - 50, height: 150)
+        let descriptionText = CGRect(x: 25, y: 360, width: view.frame.width - 50, height: 150)
         postDescriptionField = UITextView(frame: descriptionText)
         postDescriptionField.placeholder = "  Social Description"
         postDescriptionField.layer.cornerRadius = 5.0
@@ -84,7 +84,7 @@ class NewSocialViewController: UIViewController {
         postDescriptionField.textColor = UIColor.black
         view.addSubview(postDescriptionField)
 
-        let dateText = CGRect(x: 25, y: 575, width: view.frame.width - 50, height: 50)
+        let dateText = CGRect(x: 25, y: 545, width: view.frame.width - 50, height: 50)
         postDate = UITextField(frame: dateText)
         postDate.placeholder = "  07-29-1998"
         postDate.layer.cornerRadius = 5.0
@@ -130,7 +130,7 @@ class NewSocialViewController: UIViewController {
     }
     
     func setupEventImageView() {
-        eventImageView = UIImageView(frame: CGRect(x: 20, y: 230, width: UIScreen.main.bounds.width - 40, height: 75))
+        eventImageView = UIImageView(frame: CGRect(x: 20, y: 200, width: UIScreen.main.bounds.width - 40, height: 75))
         addAPhotoButton = UIButton(frame: eventImageView.frame)
         addAPhotoButton.setTitle("Add a Photo!", for: .normal)
         addAPhotoButton.setTitleColor(UIColor.blue, for: .normal)
